@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist+Pixel&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&family=Silkscreen:wght@400;700&family=Tiny5&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.pixel-bubble {
+  border-radius: 0px; 
+}
+
+.pixel-bubble::before {
+  content: '';
+  position: absolute;
+  bottom: -4px; 
+  left: 14px;
+  width: 12px;
+  height: 4px;
+  background: #F5B168;
+}
+
+.pixel-bubble::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 18px;
+  width: 6px;
+  height: 4px;
+  background: #F5B168; 
+}
